@@ -34,7 +34,7 @@ body {
   transition: transform 0.5s;
 }
 .card:hover .front {
-  transform: rotate(-180deg);
+  transform: rotateX(-180deg);
 }
 .front img {
   display: block;
@@ -49,7 +49,11 @@ body {
   height: 100%;
   background-color: #000;
   backface-visibility: hidden;
-  transform: rotate(0deg);
+  transform: rotateX(180deg);
+  transition: transform 0.5s;
+}
+.card:hover .back {
+  transform: rotateX(0deg);
 }
 .back .details {
   position: absolute;
@@ -88,4 +92,13 @@ body {
 }
 .social-icons a:hover {
   background-color: #b60000;
+}
+.back::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.105);
 }
