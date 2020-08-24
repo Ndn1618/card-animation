@@ -68,5 +68,17 @@ body {
 .details span {
   color: #a7a7a7;
   font-size: 16px;
-  
+}
+.social-icons {
+  padding: 10px;
+}
+.social-icons a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  background-color: #262626;
+  color: #fff;
+  border-radius: 50%;
+  text-decoration: none;
 }
